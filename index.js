@@ -1,29 +1,41 @@
 var reminder = [];
-var todo = document.getElementByID("tasker")
-var listBox = document.getElementByID("cabinet")
-todo.listBox
+var todo = document.getElementById("tasker")
+// var listBox = document.getElementById("cabinet")
+// todo.listBox
 
 const addto = () => {
-      if(todo.value === '') {
-      reminder.push(todo.value)
-
+      if(typeof todo.value == 'string') {
+      let temptodo = todo.value
+      reminder.push(temptodo)
+      stuff ();
+      } else {
+      alert("Did you forget to type something?")
       }
-      else{
-
-        alert("Did you forget to type something?")
-      }
-
 }
 
-
-
-function stuff () {
-      for (let i = 0; i < reminder.length; i++){
-
+const stuff = () => {
+      for (let i = 0; i < reminder.length; i++) {
+        let shelflist = document.querySelector('#shelf1')
+        let newItem = document.createElement('input')
+        newItem.innerHTML = reminder[i]
+        shelflist.appendChild(newItem)
         }
+}
+
+const remove = () => {
+
+  if {
+
+  } else {
+
+  }
 
 }
+
 console.log(reminder);
+
+
+
 //2.3
 /*
 let newLi = document.createElement('li');
