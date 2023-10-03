@@ -8,16 +8,30 @@
 </head>
 <body>
     <h1>To Do List</h1>
-      <input type="text" class="tasker" id="tasker">
+    <div class='container'>
+      <div class = "todo-project"
+      <h2>Tasks to complete</h2>
+      <div class="row">
+        <input type="text" class="tasker" id="tasker" placeholder="Add your text"><br>
         <button
         type="button"
         class="addbutton"
-        onclick="addto()">Add to list</button>
-      <form id="shelf1" class="shelf">
-        <input type="checkbox">Task 1<br>
-        <input type="checkbox">Task 2<br>
-        <input type="checkbox">Task 3<br>
-      </form>
+        onclick="addto()">Add to list
+      </button>
+        <button
+        type=" button"
+        class="removebutton"
+        onclick="remove()">Remove from List
+      </button>
+     <ui>
+        <li id="one" name="one" type="checkbox">Task 1</li><br>
+        <li id="two" type="checkbox">Task 2</li><br>
+        <li id="three" type="checkbox">Task 3</li><br>
+    </ui>
       <script src="./index.js" async></script>
+    </div>
+  </div>
 </body>
 </html>
+
+
